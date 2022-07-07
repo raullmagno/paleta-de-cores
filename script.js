@@ -1,5 +1,5 @@
 const mainDiv = document.getElementById('tabela-div');
-const primeiraCor = document.querySelector('.brown');
+const primeiraCor = document.querySelector('.black');
 const segundaCor = document.querySelector('.red');
 const terceiraCor = document.querySelector('.orange');
 const quartaCor = document.querySelector('.yellow');
@@ -24,6 +24,7 @@ function criarTabela() {
 criarTabela();
 
 // cor preta selecionada como inicial cada vez que a página recarrega
+
 window.onload = () => {
   primeiraCor.classList.add('selected');
   const pixels = document.querySelectorAll('.pixel');
