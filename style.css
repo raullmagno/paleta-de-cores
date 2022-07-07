@@ -23,18 +23,19 @@ h1 {
     background-color: white;
   }
   
-  .black {
-      background-color: black;
-  }
-  
-  .blue {
-      background-color: blue;
-  }
-  
-  .pink {
-      background-color: pink;
-  }
-  
-  .red {
+  .brown {
+    background-color: brown;
+}
+
+  .red{
       background-color: red;
   }
+  
+  .orange {
+      background-color: orange;
+  }
+  
+  .yellow {
+      background-color: yellow;
+  }
+  
