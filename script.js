@@ -1,16 +1,22 @@
-let coresDaPaleta = document.getElementsByClassName("color");
-//coresDaPaleta[0].style.backgroundColor = "black";
+const mainDiv = document.getElementById('tabela-div');
+const primeiraCor = document.querySelector('.black');
+const segundaCor = document.querySelector('.green');
+const terceiraCor = document.querySelector('.blue');
+const quartaCor = document.querySelector('.yellow');
 
-function addCoresPaleta() {
-  for (let i = 0; i < coresDaPaleta.length; i += 1) {
-    if (coresDaPaleta[i] === coresDaPaleta[0]) {
-      coresDaPaleta[0].style.backgroundColor = "black";
-    } else if (coresDaPaleta[i] === coresDaPaleta[1]) {
-      coresDaPaleta[1].style.backgroundColor = "green";
-    } else if (coresDaPaleta[i] === coresDaPaleta[2]) {
-      coresDaPaleta[2].style.backgroundColor = "blue";
-    }  else {
-      coresDaPaleta[3].style.backgroundColor = "yellow";
+// Cria tabela com o tamanho de 5x5
+function criarTabela() {
+  const tabela = document.createElement('table');
+  tabela.setAttribute('id', 'pixel-board');
+  mainDiv.appendChild(tabela);
+  for (let i = 0; i < 5; i += 1) {
+    const linha = document.createElement('tr');
+    tabela.appendChild(linha);
+    for (let y = 0; y < 5; y += 1) {
+      const coluna = document.createElement('td');
+      coluna.setAttribute('class', 'pixel');
+      linha.appendChild(coluna);
     }
   }
-} addCoresPaleta();
+}
+criarTabela();
