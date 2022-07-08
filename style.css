@@ -1,5 +1,5 @@
 h1 {
-    margin-left: 40px;
+    margin-left: 50px;
   }
   
   .color {
@@ -23,6 +23,13 @@ h1 {
     background-color: white;
   }
   
+  .pixel {
+    border: solid 1px black;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+  }
+
   .black {
     background-color: rgb(0, 0, 0);
 }
@@ -39,9 +46,4 @@ h1 {
       background-color: rgb(255,215,0);
   }
   
-  .pixel {
-    border: solid 1px black;
-    background-color: white;
-    height: 40px;
-    width: 40px;
-  }
+  
