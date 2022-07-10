@@ -22,13 +22,6 @@ h1 {
     border-radius: 12px;
     background-color: white;
   }
-  
-  .pixel {
-    border: solid 1px black;
-    background-color: white;
-    height: 40px;
-    width: 40px;
-  }
 
   .black {
     background-color: rgb(0, 0, 0);
@@ -46,4 +39,22 @@ h1 {
       background-color: rgb(255,215,0);
   }
   
+  .pixel {
+    height: 40px;
+    width: 40px;
+  }
+
+  .button{
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    height: 20px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: rgb(83, 231, 14);
+    padding: 6px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-left: 120px;
+  }
   

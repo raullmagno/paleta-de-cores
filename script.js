@@ -4,6 +4,7 @@ const segundaCor = document.querySelector('.violet');
 const terceiraCor = document.querySelector('.pink');
 const quartaCor = document.querySelector('.gold');
 const colorPalette = document.querySelector('.color');
+const clearBtn =document.querySelector('.button');
 
 // Cria tabela com o tamanho de 5x5
 
@@ -23,7 +24,7 @@ function criarTabela() {
 }
 criarTabela();
 
-// cor preta selecionada como inicial cada vez que a página recarrega
+// cor preta inicial 
 
 window.onload = () => {
   primeiraCor.classList.add('selected');
@@ -84,5 +85,12 @@ quartaCor.addEventListener('click', () => {
     pixels[i].addEventListener('click', () => {
       pixels[i].style.backgroundColor = 'rgb(255,215,0)';
     });
+  }
+});
+
+clearButton.addEventListener('click', () => {
+  const pixels = document.querySelectorAll('.pixel');
+  for (let i = 0; i < pixels.length; i += 1) {
+    pixels[i].style.backgroundColor = 'rgb(255, 255, 255)';
   }
 });
