@@ -1,8 +1,8 @@
 const mainDiv = document.getElementById('tabela-div');
 const primeiraCor = document.querySelector('.black');
-const segundaCor = document.querySelector('.violet');
-const terceiraCor = document.querySelector('.pink');
-const quartaCor = document.querySelector('.gold');
+const segundaCor = document.querySelector('.MediumBlue');
+const terceiraCor = document.querySelector('.DeepPink');
+const quartaCor = document.querySelector('.GreenYellow');
 const colorPalette = document.querySelector('.color');
 const clearBtn =document.querySelector('.button');
 
@@ -57,7 +57,7 @@ segundaCor.addEventListener('click', () => {
   const pixels = document.querySelectorAll('.pixel');
   for (let i = 0; i < pixels.length; i += 1) {
     pixels[i].addEventListener('click', () => {
-      pixels[i].style.backgroundColor = 'rgb(148,0,211)';
+      pixels[i].style.backgroundColor = 'rgb(0,0,205)';
     });
   }
 });
@@ -83,7 +83,7 @@ quartaCor.addEventListener('click', () => {
   const pixels = document.querySelectorAll('.pixel');
   for (let i = 0; i < pixels.length; i += 1) {
     pixels[i].addEventListener('click', () => {
-      pixels[i].style.backgroundColor = 'rgb(255,215,0)';
+      pixels[i].style.backgroundColor = 'rgb(173,255,47)';
     });
   }
 });
