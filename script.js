@@ -3,7 +3,7 @@ const primeiraCor = document.querySelector('.black');
 const segundaCor = document.querySelector('.MediumBlue');
 const terceiraCor = document.querySelector('.DeepPink');
 const quartaCor = document.querySelector('.GreenYellow');
-const colorPalette = document.querySelector('.color');
+const colorPalette = document.querySelectorAll('.color');
 const clearBtn =document.querySelector('.button');
 
 // Cria tabela com o tamanho de 5x5
@@ -87,6 +87,8 @@ quartaCor.addEventListener('click', () => {
     });
   }
 });
+
+
 
 clearBtn.addEventListener('click', () => {
   const pixels = document.querySelectorAll('.pixel');
