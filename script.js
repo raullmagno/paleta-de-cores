@@ -1,8 +1,8 @@
 const mainDiv = document.getElementById('tabela-div');
 const primeiraCor = document.querySelector('.black');
-const segundaCor = document.querySelector('.MediumBlue');
-const terceiraCor = document.querySelector('.DeepPink');
-const quartaCor = document.querySelector('.GreenYellow');
+const segundaCor = document.querySelector('.white');
+const terceiraCor = document.querySelector('.red');
+const quartaCor = document.querySelector('.gold');
 const colorPalette = document.querySelectorAll('.color');
 const clearBtn =document.querySelector('.button');
 
@@ -12,10 +12,10 @@ function criarTabela() {
   const tabela = document.createElement('table');
   tabela.setAttribute('id', 'pixel-board');
   mainDiv.appendChild(tabela);
-  for (let i = 0; i < 5; i += 1) {
+  for (let i = 0; i < 10; i += 1) {
     const linha = document.createElement('tr');
     tabela.appendChild(linha);
-    for (let y = 0; y < 5; y += 1) {
+    for (let y = 0; y < 10; y += 1) {
       const coluna = document.createElement('td');
       coluna.setAttribute('class', 'pixel');
       linha.appendChild(coluna);
@@ -57,7 +57,7 @@ segundaCor.addEventListener('click', () => {
   const pixels = document.querySelectorAll('.pixel');
   for (let i = 0; i < pixels.length; i += 1) {
     pixels[i].addEventListener('click', () => {
-      pixels[i].style.backgroundColor = 'rgb(0,0,205)';
+      pixels[i].style.backgroundColor = 'rgb(255, 255, 255)';
     });
   }
 });
@@ -70,7 +70,7 @@ terceiraCor.addEventListener('click', () => {
   const pixels = document.querySelectorAll('.pixel');
   for (let i = 0; i < pixels.length; i += 1) {
     pixels[i].addEventListener('click', () => {
-      pixels[i].style.backgroundColor = 'rgb(255,20,147)';
+      pixels[i].style.backgroundColor = 'rgb(220,20,60)';
     });
   }
 });
@@ -83,7 +83,7 @@ quartaCor.addEventListener('click', () => {
   const pixels = document.querySelectorAll('.pixel');
   for (let i = 0; i < pixels.length; i += 1) {
     pixels[i].addEventListener('click', () => {
-      pixels[i].style.backgroundColor = 'rgb(173,255,47)';
+      pixels[i].style.backgroundColor = 'rgb(255,215,0)';
     });
   }
 });

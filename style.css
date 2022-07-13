@@ -1,22 +1,28 @@
 body {
-  background-color: rgb(49, 204, 165);
+  background-image: url(./peb.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 50px;
+    font-family: monospace;
+    margin-left: 360px;
+    color: white;
   }
   
   .color {
     display: inline-block;
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
     border-radius: 12px;
   }
   
+  #color-palette{
+    margin-left: 330px;
+  }
   table {
-    margin-left: 40px;
+    margin-left: 200px;
     margin-bottom: 10px;
   }
   
@@ -32,34 +38,34 @@ h1 {
     background-color: rgb(0, 0, 0);
 }
 
-  .MediumBlue{
-      background-color: rgb(0,0,205);
+  .red {
+      background-color: rgb(220,20,60);
   }
   
-  .DeepPink {
-      background-color: rgb(255,20,147);
+  .white {
+      background-color: rgb(255, 255, 255);
   }
   
-  .GreenYellow {
-      background-color: rgb(173,255,47);
+  .gold {
+      background-color: rgb(255,215,0);
   }
   
   .pixel {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
   }
 
   .button{
     font-family: monospace;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
-    height: 20px;
-    width: 60px;
+    height: 30px;
+    width: 80px;
     border-radius: 5px;
-    background-color: rgb(83, 231, 14);
+    background-color: rgb(255,215,0);
     padding: 6px;
     margin-bottom: 1rem;
     cursor: pointer;
-    margin-left: 120px;
+    margin-left: 430px;
   }
   
